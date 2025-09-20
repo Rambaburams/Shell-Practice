@@ -11,3 +11,4 @@ LEADERS=("RAMBABU" "RAMESH" "SATISH" "SURESH" "MANI")
 
 echo "All leaders :${LEADERS[@]}" 
 echo "first name :${LEADERS[0]}"
+echo "Names are not present in the list: ${LEADERS[10]}"
