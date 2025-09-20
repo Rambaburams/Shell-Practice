@@ -7,3 +7,5 @@ echo "print script name $0"
 echo "print dir name $PWD"
 echo "print pid $$"
 echo "print user :$USER"
+
+echo "print pid of last :$!"
