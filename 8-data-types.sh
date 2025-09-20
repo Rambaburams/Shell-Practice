@@ -10,3 +10,4 @@ echo "sum of numbers: $SUM"
 LEADERS=("RAMBABU" "RAMESH" "SATISH" "SURESH" "MANI")
 
 echo "All leaders :${LEADERS[@]}" 
+echo "first name :${LEADERS[0]}"
