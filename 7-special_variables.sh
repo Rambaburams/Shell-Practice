@@ -8,4 +8,5 @@ echo "print dir name $PWD"
 echo "print pid $$"
 echo "print user :$USER"
 
+sleep 30 &
 echo "print pid of last :$!"
