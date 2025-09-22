@@ -20,9 +20,9 @@ validation(){
     fi
 }
 
-dnf list installed python
+dnf list installed python3
 if [ $? -ne 0 ] ; then
-    dnf install python -y 
+    dnf install python3 -y 
     validation $? "python"
 else 
     echo -e "Python alredy exits....$Y Skipping $N"
