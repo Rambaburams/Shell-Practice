@@ -12,7 +12,7 @@ validation(){
         echo "Error: Installation of $2 was falied"
         exit 1  
     else
-        echo "Insatllation of $ was success"
+        echo "Insatllation of $2 was success"
     fi
 }
 
