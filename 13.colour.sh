@@ -2,4 +2,4 @@
 
 R="\e[31m"
 
-echo "Rambabu"
+echo -e "$R Rambabu"
