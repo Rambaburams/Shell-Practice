@@ -12,3 +12,4 @@ if [ $? -ne 0 ] ; then
     echo "ERROR: Installing python was failed"
 else 
     echo "installation was success"
+fi
