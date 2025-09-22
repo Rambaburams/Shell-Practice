@@ -28,3 +28,10 @@ else
     echo -e "Python alredy exits....$Y Skipping $N"
 fi
 
+dnf list installed nginx
+if [ $? -ne 0 ] ; then 
+    dnf install nginx -y
+    validation $? "nginx"
+else 
+    echo -e "nginx alredy exits..... $Y Skipping $N"
+fi
