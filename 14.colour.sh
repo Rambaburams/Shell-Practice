@@ -21,7 +21,7 @@ validation(){
 }
 
 dnf list installed python
-if [$? -ne 0] ; then
+if [ $? -ne 0 ] ; then
     dnf install python -y 
     validation $? "python"
 else 
