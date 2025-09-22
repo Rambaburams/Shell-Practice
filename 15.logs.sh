@@ -17,3 +17,21 @@ if [ $User -ne 0 ] ; then
     echo "Error : please run the script with root privillages"
     exit 1
 fi
+
+validation(){ # functions receive inputs through args just like shell script args
+    if [ $1 -ne 0 ]; then
+        echo -e "Installing $2 ... $R FAILURE $N" | tee -a $LOG_FILE
+        exit 1
+    else
+        echo -e "Installing $2 ... $G SUCCESS $N" | tee -a $LOG_FILE
+    fi
+}
+
+dnf list installed python3 &>>$Log_filename
+
+if [ $? -ne 0 ] ; then 
+    dnf install python3 &>>$Log_filename
+    validation $? "python3"
+else
+    echo "python3 alredy exits... $Y Skipping $N"
+fi
