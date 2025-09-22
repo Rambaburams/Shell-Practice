@@ -10,6 +10,7 @@ fi
 validation(){
     if [ $1 -ne 0 ] ; then
         echo "Error: Installation of $2 was falied"
+        exit 1  
     else
         echo "Insatllation of $ was success"
     fi
