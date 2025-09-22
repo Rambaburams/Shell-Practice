@@ -35,3 +35,11 @@ if [ $? -ne 0 ] ; then
 else 
     echo -e "nginx alredy exits..... $Y Skipping $N"
 fi
+
+
+dnf list installed git 
+if [ $? -ne 0 ] ; then 
+    dnf install git -y 
+else
+    echo -e "git alerdy exits.... $Y skipping $N"
+fi
