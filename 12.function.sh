@@ -18,3 +18,6 @@ validation(){
 
 dnf install python -y
 validation $? "Python"
+
+dnf install nginx -y 
+validation $? "nginx"
