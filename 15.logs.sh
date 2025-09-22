@@ -7,7 +7,7 @@ Y="\e[33m"
 N="\e[0m"
 
 Logs_floder="/var/log/shell-script"
-script_name=$ (echo $0 | cut -d "." -f1)
+script_name=$(echo $0 | cut -d "." -f1)
 Log_filename="$Logs_floder/$script_name.log"
 
 mkdir -p $Logs_floder
