@@ -33,5 +33,5 @@ if [ $? -ne 0 ] ; then
     dnf install python3 &>>$Log_filename
     validation $? "python3"
 else
-    echo "python3 alredy exits... $Y Skipping $N"
+    echo -e "python3 alredy exits... $Y Skipping $N"
 fi
