@@ -18,7 +18,7 @@ if [ $User -ne 0 ] ; then
 fi
 
 validation(){
-    if [$1 ne 0];then
+    if [ $1 ne 0 ]; then
         echo -e "Installing $2.....$R Faliure.... $N" | tee -a $LOG_FILE
         exit 1
     else
