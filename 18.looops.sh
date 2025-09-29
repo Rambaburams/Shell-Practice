@@ -36,5 +36,5 @@ validation(){
 # fi
 for package in $@
 do 
-    echo"package"
+    echo"package is :$package"
 done
