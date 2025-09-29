@@ -26,11 +26,15 @@ validation(){
     fi
 }
 
-dnf list installed python3 &>>Log_filename
+# dnf list installed python3 &>>Log_filename
 
-if [ $? -ne 0 ]; then 
-dnf install python3 &>>Log_filename
-validation $? "python3"
-else
-    echo -e "python3 alredy exits... $Y Skipping $N"
-fi
+# if [ $? -ne 0 ]; then 
+# dnf install python3 &>>Log_filename
+# validation $? "python3"
+# else
+#     echo -e "python3 alredy exits... $Y Skipping $N"
+# fi
+for package in $@
+do 
+    echo"package"
+done
