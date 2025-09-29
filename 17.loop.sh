@@ -5,7 +5,7 @@
 #     echo $i
 # done
 
-for i in {ram1..ram5}
+for i in {ram1..5}
 do
     echo $i
 done
