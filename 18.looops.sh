@@ -36,5 +36,12 @@ validation(){
 # fi
 for package in $@
 do 
-    echo "package is : $package"
+    dnf list installed $package &>>LOG_FILE
+
+    if [ $? -ne 0 ] ; then
+    dnf install $package -y &>>LOG_FILE
+    validation $? "$package"
+    else
+        echo -e "$package is alreday installed $Y skipping $N"
+    fi
 done
