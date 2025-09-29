@@ -23,6 +23,7 @@ validation(){
         exit 1
     else
         echo -e "Installing $2.... $G Success... $N" | tee -a $LOG_FILE
+    fi
 }
 
 dnf list installed python3 &>>Log_filename
