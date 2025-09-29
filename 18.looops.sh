@@ -28,7 +28,7 @@ validation(){
 
 dnf list installed python3 &>>Log_filename
 
-if [$? ne 0]; then 
+if [$? -ne 0]; then 
 dnf install python3 &>>Log_filename
 validation $? "python3"
 else
